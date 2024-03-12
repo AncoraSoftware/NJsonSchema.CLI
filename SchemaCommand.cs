@@ -15,13 +15,13 @@ namespace NJsonSchema.CLI
         [Verb("to-json", HelpText = "Generate a json-schema from a .NET assembly and class(es)")]
         public class ToJsonCommand
         {
-            [Option("assembly-path", Required = true, HelpText = "The path to the .NET assembly.")]
+            [Option('a', "assembly-path", Required = true, HelpText = "The path to the .NET assembly.")]
             public IEnumerable<string> AssemblyPath { get; set; }
 
-            [Option("type-name", HelpText = "The full name of the .NET type.", Default = "Options$")]
+            [Option('t', "type-name", HelpText = "The full name of the .NET type.", Default = "Options$")]
             public string TypeName { get; set; }
 
-            [Option("output", HelpText = "The output file path.")]
+            [Option('o', "output", HelpText = "The output file path.")]
             public string Output { get; set; }
 
             public int OnExecute()
