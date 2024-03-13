@@ -7,7 +7,7 @@ CLI for [NJsonSchema](https://github.com/RicoSuter/NJsonSchema).
 Only the following commands are supported:
 
 ##### Generate JSON Schemas for all Options classes in assembly:
-> NJsonSchema.exe schema to-json --assembly-path="C:\path\to\assembly.dll"
+> NJsonSchema.CLI.exe to-json --assembly-path="C:\path\to\assembly.dll"
 
 ##### Get Help
-> NJsonSchema.exe --help
+> NJsonSchema.CLI.exe --help

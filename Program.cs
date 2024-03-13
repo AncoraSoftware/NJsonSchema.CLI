@@ -1,5 +1,4 @@
 using CommandLine;
-using static NJsonSchema.CLI.SchemaCommand;
 
 namespace NJsonSchema.CLI
 {
